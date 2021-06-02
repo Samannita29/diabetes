@@ -26,14 +26,14 @@ def DiabetesPrediction():
     df.info()
     print(request.form)
 
-    inputQuery1 = request.form['query1']
-    inputQuery2 = request.form['query2']
-    inputQuery3 = request.form['query3']
-    inputQuery4 = request.form['query4']
-    inputQuery5 = request.form['query5']
-    inputQuery6 = request.form['query6']
-    inputQuery7 = request.form['query7']
-    inputQuery8 = request.form['query8']
+    inputQuery1 = request.form['preg']
+    inputQuery2 = request.form['plasma']
+    inputQuery3 = request.form['prediabetes']
+    inputQuery4 = request.form['skin']
+    inputQuery5 = request.form['test']
+    inputQuery6 = request.form['mass']
+    inputQuery7 = request.form['pedi']
+    inputQuery8 = request.form['age']
     
     model=pickle.load(open('model1.sav','rb'))
     
